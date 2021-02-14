@@ -45,11 +45,17 @@ const selectItem = (event, img) => {
   let item = sliders.indexOf(img);
   if (item === -1) {
     sliders.push(img);
-  } 
+  }
+  else{
+    sliders.splice(item,1)
+  }
+  console.log(element);
+  console.log("item:",item, sliders.length);
 }
 var timer
 const createSlider = () => {
   // check slider image length
+  console.log(sliders.length);
   if (sliders.length < 2) {
     alert('Select at least 2 image.')
     return;
