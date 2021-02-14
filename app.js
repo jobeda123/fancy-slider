@@ -49,8 +49,8 @@ const selectItem = (event, img) => {
   else{
     sliders.splice(item,1)
   }
-  console.log(element);
-  console.log("item:",item, sliders.length);
+  // console.log(element);
+  // console.log("item:",item, sliders.length);
 }
 var timer
 const createSlider = () => {
